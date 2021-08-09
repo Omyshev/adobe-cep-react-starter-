@@ -1,0 +1,51 @@
+{
+  "name": "cep_starter",
+  "version": "1.0.0",
+  "description": "A starter template for making cep extensions",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config ./config/webpack.client.js --mode development --open",
+    "release:dev": "node ./config/scripts/build.js development && node ./config/scripts/deploy.js development ",
+    "release:prod": "node ./config/scripts/build.js production && node ./config/scripts/deploy.js production && node ./config/scripts/archive.js"
+  },
+  "keywords": [],
+  "author": "Your_Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@svgr/webpack": "^5.5.0",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "fs-extra": "^10.0.0",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-webpack-plugin": "^5.3.2",
+    "jsxbin": "^2.0.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "mkdirp": "^1.0.4",
+    "ora": "^4.0.5",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "source-map": "^0.7.3",
+    "svg-inline-loader": "^0.8.2",
+    "svg-url-loader": "^7.1.1",
+    "typescript": "^3.9.7",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^3.0.0",
+    "zxp-sign-cmd": "^1.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.9.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "ref-loader": "^1.0.3",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
